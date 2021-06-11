@@ -1,0 +1,93 @@
+<!--
+  ~ Copyright (c) 2015-present, Parse, LLC.
+  ~ All rights reserved.
+  ~
+  ~ This source code is licensed under the BSD-style license found in the
+  ~ LICENSE file in the root directory of this source tree. An additional grant
+  ~ of patent rights can be found in the PATENTS file in the same directory.
+  -->
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layoutRV"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#71C2E3"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="357dp"
+        android:layout_height="59dp"
+        android:layout_below="@+id/logoIV"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="113dp"
+        android:layout_marginEnd="22dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <ImageView
+        android:id="@+id/logoIV"
+        android:layout_width="wrap_content"
+        android:layout_height="73dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        app:srcCompat="@drawable/instaiconreal" />
+
+    <EditText
+        android:id="@+id/usernameEditText"
+        android:layout_width="350dp"
+        android:layout_height="57dp"
+        android:layout_below="@+id/logoIV"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="29dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="151dp"
+        android:layout_height="62dp"
+        android:layout_below="@+id/passwordEditText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="207dp"
+        android:background="#B3D3F8"
+        android:onClick="signupClicked"
+        android:text="Sign Up"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/loginTV"
+        android:layout_width="179dp"
+        android:layout_height="57dp"
+        android:layout_below="@+id/passwordEditText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="197dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="19dp"
+        android:text="or Login"
+        android:textAllCaps="true"
+        android:textColor="#3A48C3"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+</android.widget.RelativeLayout>
